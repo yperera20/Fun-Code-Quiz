@@ -13,7 +13,7 @@ let score = 0;
 let timeLeft = 60;
 let timerInterval;
 
-const questions = [
+var questions = [
     {
         question: 'What is HTML?',
         options: ['Hypertext Markup Language', 'Hyper Transfer Markup Language', 'Hyper Text Makeup Language', 'High Text Markup Language'],
@@ -112,5 +112,5 @@ function retrieveAndDisplayScores() {
 
 }
 
-const viewScoresBtn = document.getElementById('view-scores-btn');
+var viewScoresBtn = document.getElementById('view-scores-btn');
 viewScoresBtn.addEventListener('click', retrieveAndDisplayScores);
